@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="She-Coder - Empowering girls to learn programming. Master frontend and backend development with interactive lessons and supportive community.">
+  <meta name="keywords" content="coding for girls, learn programming, frontend development, backend development, women in tech, coding courses">
+  <meta name="author" content="She-Coder">
+  
+  <meta property="og:title" content="She-Coder - Empower Your Coding Journey">
+  <meta property="og:description" content="Join thousands of girls learning to code. Master frontend and backend development.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://she-coder.com">
+  
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <title>She-Coder - Empower Your Coding Journey</title>
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    
+    code {
+      font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+    }
+    
+    #root {
+      min-height: 100vh;
+    }
+    
+    .loading-spinner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #faf5ff 0%, #fce7f3 50%, #eff6ff 100%);
+    }
+    
+    .spinner {
+      width: 50px;
+      height: 50px;
+      border: 4px solid #e9d5ff;
+      border-top: 4px solid #9333ea;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+    
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    
+    html {
+      scroll-behavior: smooth;
+    }
+    
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+    
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+      background: linear-gradient(180deg, #9333ea 0%, #ec4899 100%);
+      border-radius: 5px;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+      background: linear-gradient(180deg, #7c3aed 0%, #db2777 100%);
+    }
+  </style>
+</head>
+<body>
+  <noscript>
+    <div style="padding: 20px; text-align: center; font-family: Arial, sans-serif;">
+      <h1 style="color: #9333ea;">She-Coder</h1>
+      <p style="margin-top: 10px; color: #666;">
+        You need to enable JavaScript to run this app.
+      </p>
+    </div>
+  </noscript>
+  
+  <div id="root">
+    <div class="loading-spinner">
+      <div class="spinner"></div>
+    </div>
+  </div>
+</body>
+</html>
