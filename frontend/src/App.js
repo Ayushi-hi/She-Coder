@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Code, Sparkles, Rocket, BookOpen, Users, Award, Menu, X, ChevronRight, CheckCircle, Circle, Lock, Flame, Calendar, Upload, Play, Trophy, Star, TrendingUp, Target, Zap } from 'lucide-react';
 import { authAPI, progressAPI, userAPI } from './services/api';
-
+// Test commit
 export default function SheCoderWebsite() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [currentView, setCurrentView] = useState('home');
